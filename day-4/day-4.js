@@ -1,11 +1,45 @@
-var count = 0
+switch (15) {
+   case 15:
+      console.log("15")
+      break;
+      case 20:
+      console.log("20")
+   
 
-for(var i = 10 ; i < 31; i++){
-   if (i % 2 == 1){
-    count +=i;
-
-   }
+   default:
+      console.log("15 nor 20")
+      break;
 
 }
 
-console.log(count)
+
+
+   var count = 1;
+   count = count + 2;
+   count += 2
+   count ++
+   console.log(count)
+
+
+   var count = 1;
+   count = count - 2;
+   count -= 2
+   count --
+   console.log(count)
+
+for (var count = 1; count <= 10; count ++){
+   console.log(count)
+   
+}
+
+
+
+
+   
+
+
+
+
+
+
+
