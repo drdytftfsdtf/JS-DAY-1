@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+      <h1>counter : <span id="counter">0</span></h1>
+      <button onclick="increment()">+</button>
+      <button onclick="increment()">-</button>
+      <button onclick="reset()">reset</button>
+      <!--DL -->
+      <h1> DL </h1>
+      <input id="age" type="number" placeholder="type your age.." />
+      <button onclick="checkisuservalid()">check</button>
+      <p id="displayresult"></p>
+
+
+<script>
+    var counter = document.getElementById("counter").innerText;
+    function increment(){
+        counter++;
+
+       document.getElementById("counter").innerText = counter;
+    }
+    function decrement(){
+        counter--;
+        document.getElementById("counter").innerText = counter;
+    }
+    function reset(){
+        counter = 0
+        document.getElementById("counter").innerText = counter;
+    }
+
+    function checkisuservalid(){
+    var age = document.getElementById("age").vaue;
+    const ptag = document.getElementById("displayresult");
+
+    if(age > 18 && age < 18){
+        var div = document.createElement("div")
+        div.style.color = "red"
+        div.innerText = "you are eligible for DL"
+        ptag.appendchild(div)
+        alert("you are eligible for DL")
+    }  else if (age = 18){
+        var h1 = document.createElement("h1")  
+        h1.style.color = "blue"
+        h1 .style.fontSize = "40px"
+        h1.innerText = "you are eligible for LL"
+        ptag.appendChild(h1)
+        alert("you are eligible for LL") 
+    }else {
+        var h1 = document.createElement("h2")  
+        h1.style.color = "pink"
+        h1 .style.fontSize = "20px"
+        h1.innerText = "you are not eligible for DL"
+        ptag.appendChild(h2)
+        alert("you are eligible for DL") 
+    }
+    Document.getElementById("age").value =""
+    
+}
+
+</script>
+
+
+
+
